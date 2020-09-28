@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "mssql1": {
+      "restored": true,
+      "restoreTime": "2020-08-27T20:57:11.6409418Z"
+    }
+  },
+  "parameters": {
+    "resourceGroup": {
+      "Type": "resourceGroup",
+      "Value": "cloud-shell-storage-westeurope"
+    },
+    "subscriptionId": {
+      "Type": "subscription",
+      "Value": "daf46102-3741-4ab5-91bb-a10540267d46"
+    }
+  }
+}
