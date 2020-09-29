@@ -1,0 +1,19 @@
+apiVersion : apps/v1
+kind: Deployment
+metadata:
+  name: ampleremployeeswebapi 
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: ampleremployeeswebapi
+  template:
+    metadata:
+      labels:
+        app: ampleremployeeswebapi 
+    spec:
+      containers:
+        - name: ampleremployeeswebapi 
+          image: employeemanagercontainerregistry.azurecr.io/ampleremployeeswebapi
+          ports:
+          - containerPort: 80
