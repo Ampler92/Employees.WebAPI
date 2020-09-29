@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "9xptW3Khk8XFNHjG0uOCj6ZsNL4ToXR6RuwJG7YmMfmMvrzjhx0NE4vwkuv552a1+ArvioPPaSgxSSl/qPHqeg==",
+  "dgSpecHash": "pBNF2le4ErItF7drLmFSn1JEZ3Ycd5thUXP/r/Du0aI5AzMRnDgPUcuLJUTQtmqCPOUjuPwapuiJsLQDnOovuw==",
   "success": true,
-  "projectFilePath": "I:\\Mountfield\\EmployeeManager.WebAPI\\EmployeeManager.WebAPI\\Employees.WebAPI\\EmployeeManager.WebAPI.csproj",
+  "projectFilePath": "I:\\Mountfield\\Employees.WebAPI\\EmployeeManager.WebAPI.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\klaus\\.nuget\\packages\\automapper\\10.0.0\\automapper.10.0.0.nupkg.sha512",
     "C:\\Users\\klaus\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\8.0.1\\automapper.extensions.microsoft.dependencyinjection.8.0.1.nupkg.sha512",

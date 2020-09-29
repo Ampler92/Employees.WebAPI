@@ -10,10 +10,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-nanoserver-1809 AS build
 WORKDIR /src
-COPY ["EmployeeManager.WebAPI.csproj", "EmployeeManager.WebAPI/"]
+COPY ["EmployeeManager.WebAPI.csproj", "."]
 RUN dotnet restore "EmployeeManager.WebAPI.csproj"
 COPY . .
-WORKDIR "/src/EmployeeManager.WebAPI"
+WORKDIR "/src"
 RUN dotnet build "EmployeeManager.WebAPI.csproj" -c Release -o /app/build
 
 FROM build AS publish

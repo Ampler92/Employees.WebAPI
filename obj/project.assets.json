@@ -8922,11 +8922,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "I:\\Mountfield\\EmployeeManager.WebAPI\\EmployeeManager.WebAPI\\Employees.WebAPI\\EmployeeManager.WebAPI.csproj",
+      "projectUniqueName": "I:\\Mountfield\\Employees.WebAPI\\EmployeeManager.WebAPI.csproj",
       "projectName": "EmployeeManager.WebAPI",
-      "projectPath": "I:\\Mountfield\\EmployeeManager.WebAPI\\EmployeeManager.WebAPI\\Employees.WebAPI\\EmployeeManager.WebAPI.csproj",
+      "projectPath": "I:\\Mountfield\\Employees.WebAPI\\EmployeeManager.WebAPI.csproj",
       "packagesPath": "C:\\Users\\klaus\\.nuget\\packages\\",
-      "outputPath": "I:\\Mountfield\\EmployeeManager.WebAPI\\EmployeeManager.WebAPI\\Employees.WebAPI\\obj\\",
+      "outputPath": "I:\\Mountfield\\Employees.WebAPI\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Microsoft\\Xamarin\\NuGet\\"
