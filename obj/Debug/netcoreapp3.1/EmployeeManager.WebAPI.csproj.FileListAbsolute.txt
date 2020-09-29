@@ -277,7 +277,6 @@ I:\Mountfield\EmployeeManager.WebAPI\EmployeeManager.WebAPI\Employees.WebAPI\bin
 I:\Mountfield\EmployeeManager.WebAPI\EmployeeManager.WebAPI\Employees.WebAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 I:\Mountfield\EmployeeManager.WebAPI\EmployeeManager.WebAPI\Employees.WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 I:\Mountfield\EmployeeManager.WebAPI\EmployeeManager.WebAPI\Employees.WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-I:\Mountfield\EmployeeManager.WebAPI\EmployeeManager.WebAPI\Employees.WebAPI\obj\Debug\netcoreapp3.1\EmployeeManager.WebAPI.csprojAssemblyReference.cache
 I:\Mountfield\EmployeeManager.WebAPI\EmployeeManager.WebAPI\Employees.WebAPI\obj\Debug\netcoreapp3.1\EmployeeManager.WebAPI.AssemblyInfoInputs.cache
 I:\Mountfield\EmployeeManager.WebAPI\EmployeeManager.WebAPI\Employees.WebAPI\obj\Debug\netcoreapp3.1\EmployeeManager.WebAPI.AssemblyInfo.cs
 I:\Mountfield\EmployeeManager.WebAPI\EmployeeManager.WebAPI\Employees.WebAPI\obj\Debug\netcoreapp3.1\EmployeeManager.WebAPI.csproj.CoreCompileInputs.cache
@@ -290,3 +289,4 @@ I:\Mountfield\EmployeeManager.WebAPI\EmployeeManager.WebAPI\Employees.WebAPI\obj
 I:\Mountfield\EmployeeManager.WebAPI\EmployeeManager.WebAPI\Employees.WebAPI\obj\Debug\netcoreapp3.1\EmployeeManager.WebAPI.dll
 I:\Mountfield\EmployeeManager.WebAPI\EmployeeManager.WebAPI\Employees.WebAPI\obj\Debug\netcoreapp3.1\EmployeeManager.WebAPI.pdb
 I:\Mountfield\EmployeeManager.WebAPI\EmployeeManager.WebAPI\Employees.WebAPI\obj\Debug\netcoreapp3.1\EmployeeManager.WebAPI.genruntimeconfig.cache
+I:\Mountfield\EmployeeManager.WebAPI\EmployeeManager.WebAPI\Employees.WebAPI\bin\Debug\netcoreapp3.1\Properties\ServiceDependencies\EmployeeManagerWebAPI - Web Deploy\profile.arm.json
