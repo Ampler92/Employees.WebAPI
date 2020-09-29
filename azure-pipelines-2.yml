@@ -77,3 +77,33 @@ stages:
               containers: |
                 $(containerRegistry)/$(imageRepository):$(tag)
 
+- stage: CreateIngressController
+  displayName: Controller stage
+  jobs:  
+  - job: CreateController
+    displayName: CreateController
+    pool:
+      vmImage: $(vmImageName)
+    steps:
+    - task: Kubernetes@1
+      displayName: Deployment Script YAML
+      inputs:
+        connectionType: 'Kubernetes Service Connection'
+        kubernetesServiceEndpoint: 'WebAPIKub-default'
+        command: 'apply'
+        useConfigurationFile: true
+        configuration: 'src/deployment.yml'
+        secretType: 'dockerRegistry'
+        containerRegistryType: 'Azure Container Registry'
+        arguments:     
+    - task: Kubernetes@1
+      displayName: Services Script YAML
+      inputs:
+        connectionType: 'Kubernetes Service Connection'
+        kubernetesServiceEndpoint: 'WebAPIKub-default'
+        command: 'apply'
+        useConfigurationFile: true
+        configuration: 'src/service.yml'
+        secretType: 'dockerRegistry'
+        containerRegistryType: 'Azure Container Registry'
+        arguments:     
