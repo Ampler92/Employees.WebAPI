@@ -14,9 +14,5 @@ spec:
       containers:
       - name: employees-webapi-container
         image: employeemanagerwebapi:latest
-        resources:
-          limits:
-            memory: "128Mi"
-            cpu: "500m"
         ports:
         - containerPort: 80
