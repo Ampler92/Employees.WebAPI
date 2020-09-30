@@ -29,7 +29,11 @@
     "Docker": {
       "commandName": "Docker",
       "launchBrowser": true,
-      "launchUrl": "{Scheme}://{ServiceHost}:{ServicePort}/EmployeeManagerAPI",
+      "launchUrl": "{Scheme}://{ServiceHost}:44336/EmployeeManagerAPI",
+      "environmentVariables": {
+        "ASPNETCORE_URLS": "https://+:44336;https://+:5000",
+        "ASPNETCORE_HTTPS_PORT": "44336"
+      },
       "publishAllPorts": true,
       "useSSL": true
     }

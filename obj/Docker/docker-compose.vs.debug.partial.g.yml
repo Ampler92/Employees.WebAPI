@@ -12,20 +12,19 @@ services:
     environment:
       - DOTNET_USE_POLLING_FILE_WATCHER=1
       - ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS=true
-      - NUGET_FALLBACK_PACKAGES=/root/.nuget/fallbackpackages
+      #- NUGET_FALLBACK_PACKAGES=$container_paths_to_fallback_packages_employeemanager.webapi$
     volumes:
       - I:\Mountfield\Employees.WebAPI:/app
       - I:\Mountfield\Employees.WebAPI:/src
       - C:\Users\klaus\vsdbg\vs2017u5:/remote_debugger:rw
-      - C:\Users\klaus\.nuget\packages\:/root/.nuget/packages:ro
-      - C:\Microsoft\Xamarin\NuGet\:/root/.nuget/fallbackpackages:ro
+#$nuget_volume_mapping_employeemanager.webapi$
       - ${APPDATA}/ASP.NET/Https:/root/.aspnet/https:ro
       - ${APPDATA}/Microsoft/UserSecrets:/root/.microsoft/usersecrets:ro
 
     entrypoint: tail -f /dev/null
     labels:
       com.microsoft.visualstudio.debuggee.program: "dotnet"
-      com.microsoft.visualstudio.debuggee.arguments: " --additionalProbingPath /root/.nuget/packages --additionalProbingPath /root/.nuget/fallbackpackages  \"/app/bin/Debug/netcoreapp3.1/EmployeeManager.WebAPI.dll\""
+      #com.microsoft.visualstudio.debuggee.arguments: " $debuggee_arguments_probing_paths_employeemanager.webapi$ \"\""
       com.microsoft.visualstudio.debuggee.workingdirectory: "/app"
       com.microsoft.visualstudio.debuggee.killprogram: "/bin/sh -c \"if PID=$$(pidof dotnet); then kill $$PID; fi\""
     tty: true
