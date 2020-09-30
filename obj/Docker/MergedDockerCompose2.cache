@@ -1,0 +1,38 @@
+services:
+  employeemanager.webapi:
+    build:
+      context: I:\Mountfield\Employees.WebAPI
+      dockerfile: Dockerfile
+      labels:
+        com.microsoft.created-by: visual-studio
+        com.microsoft.visual-studio.project-name: EmployeeManager.WebAPI
+      target: base
+    container_name: EmployeeManager.WebAPI
+    entrypoint: tail -f /dev/null
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_LOGGING__CONSOLE__DISABLECOLORS: "true"
+      ASPNETCORE_URLS: https://+:443;http://+:80
+      DOTNET_USE_POLLING_FILE_WATCHER: '1'
+      NUGET_FALLBACK_PACKAGES: /root/.nuget/fallbackpackages
+    image: employeemanagerwebapi:dev
+    labels:
+      com.microsoft.visualstudio.debuggee.arguments: ' --additionalProbingPath /root/.nuget/packages
+        --additionalProbingPath /root/.nuget/fallbackpackages  "/app/bin/Debug/netcoreapp3.1/EmployeeManager.WebAPI.dll"'
+      com.microsoft.visualstudio.debuggee.killprogram: /bin/sh -c "if PID=$$(pidof
+        dotnet); then kill $$PID; fi"
+      com.microsoft.visualstudio.debuggee.program: dotnet
+      com.microsoft.visualstudio.debuggee.workingdirectory: /app
+    ports:
+    - 51080:80/tcp
+    - 51443:443/tcp
+    tty: true
+    volumes:
+    - I:\Mountfield\Employees.WebAPI:/app:rw
+    - C:\Users\klaus\vsdbg\vs2017u5:/remote_debugger:rw
+    - C:\Users\klaus\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\klaus\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+    - C:\Microsoft\Xamarin\NuGet:/root/.nuget/fallbackpackages:ro
+    - C:\Users\klaus\.nuget\packages:/root/.nuget/packages:ro
+    - I:\Mountfield\Employees.WebAPI:/src:rw
+version: '3.4'

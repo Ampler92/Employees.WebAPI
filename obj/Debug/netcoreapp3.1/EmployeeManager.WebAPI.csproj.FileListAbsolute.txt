@@ -424,7 +424,6 @@ I:\Mountfield\Employees.WebAPI\bin\Debug\netcoreapp3.1\runtimes\win-x86\native\s
 I:\Mountfield\Employees.WebAPI\bin\Debug\netcoreapp3.1\runtimes\unix\lib\netcoreapp2.0\System.Runtime.Caching.dll
 I:\Mountfield\Employees.WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netcoreapp2.0\System.Runtime.Caching.dll
 I:\Mountfield\Employees.WebAPI\bin\Debug\netcoreapp3.1\runtimes\win\lib\netstandard2.0\System.Security.Cryptography.ProtectedData.dll
-I:\Mountfield\Employees.WebAPI\obj\Debug\netcoreapp3.1\EmployeeManager.WebAPI.csprojAssemblyReference.cache
 I:\Mountfield\Employees.WebAPI\obj\Debug\netcoreapp3.1\EmployeeManager.WebAPI.AssemblyInfoInputs.cache
 I:\Mountfield\Employees.WebAPI\obj\Debug\netcoreapp3.1\EmployeeManager.WebAPI.AssemblyInfo.cs
 I:\Mountfield\Employees.WebAPI\obj\Debug\netcoreapp3.1\EmployeeManager.WebAPI.csproj.CoreCompileInputs.cache

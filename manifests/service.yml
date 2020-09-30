@@ -6,6 +6,6 @@ spec:
   selector:
     app: employees-webapi-pod
   ports:
-  - port: 44336
+  - port: 8080
     targetPort: 80
   type: LoadBalancer

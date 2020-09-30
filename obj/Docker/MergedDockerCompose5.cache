@@ -1,0 +1,16 @@
+services:
+  employeemanager.webapi:
+    build:
+      context: I:\Mountfield\Employees.WebAPI
+      dockerfile: Dockerfile
+    environment:
+      ASPNETCORE_ENVIRONMENT: Development
+      ASPNETCORE_URLS: https://+:443;http://+:80
+    image: employeemanagerwebapi
+    ports:
+    - 58080:80/tcp
+    - 58443:443/tcp
+    volumes:
+    - C:\Users\klaus\AppData\Roaming\ASP.NET\Https:/root/.aspnet/https:ro
+    - C:\Users\klaus\AppData\Roaming\Microsoft\UserSecrets:/root/.microsoft/usersecrets:ro
+version: '3.4'

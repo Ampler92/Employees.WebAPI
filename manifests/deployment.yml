@@ -13,7 +13,7 @@ spec:
     spec:
       containers:
       - name: employees-webapi-container
-        image: ampleremployeeswebapi:v1
+        image: employeemanagercontainerregistry/employees.webapi:latest
         resources:
           limits:
             memory: "128Mi"

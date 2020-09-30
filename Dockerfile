@@ -7,10 +7,10 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/core/sdk:3.1-buster AS build
 WORKDIR /src
-COPY ["EmployeeManager.WebAPI.csproj", ""]
-RUN dotnet restore "./EmployeeManager.WebAPI.csproj"
+COPY ["EmployeeManager.WebAPI.csproj", "./"]
+RUN dotnet restore "EmployeeManager.WebAPI.csproj"
 COPY . .
-WORKDIR "/src/."
+WORKDIR "/src/"
 RUN dotnet build "EmployeeManager.WebAPI.csproj" -c Release -o /app/build
 
 FROM build AS publish
