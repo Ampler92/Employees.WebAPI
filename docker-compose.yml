@@ -1,8 +1,0 @@
-version: '3.4'
-
-services:
-  employeemanager.webapi:
-    image: ${DOCKER_REGISTRY-}employeemanagerwebapi
-    build:
-      context: .
-      dockerfile: Dockerfile
